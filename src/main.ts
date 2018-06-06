@@ -2,9 +2,6 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { enableProdMode } from '@angular/core';
 import { environment } from './environments/environment';
 import { AppModule } from './app/app.module';
-
-<<<<<<< HEAD
-=======
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/first';
 import 'rxjs/add/operator/do';
@@ -14,7 +11,6 @@ import 'rxjs/add/operator/filter';
 import 'rxjs/add/operator/withLatestFrom';
 
 
->>>>>>> a1c8509... Course updated to Angular 6
 if (environment.production) {
   enableProdMode();
 }
