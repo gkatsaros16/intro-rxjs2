@@ -11,18 +11,24 @@ import {Observer} from 'rxjs'
 })
 export class LessonsListComponent implements Observer<Lesson[]>, OnInit {
     closed?: boolean;
-    error: (err: any) => void;
-    complete: () => void;
-
+    
     lessons: Lesson[] = [];
 
     ngOnInit() {
         store.lessonsList$.subscribe(this);
     }
 
-    next(data: Lesson[]) {
+    next = (data: Lesson[]) => {
         console.log('Lessons list component received data ..');
         this.lessons = data;
+    }
+
+    error(err: any) {
+        console.log(err)
+    }
+
+    complete() {
+        console.log('completed')
     }
 
     toggleLessonViewed(lesson:Lesson) {
@@ -33,9 +39,6 @@ export class LessonsListComponent implements Observer<Lesson[]>, OnInit {
     delete(deleted:Lesson) {
         store.deleteLesson(deleted);
     }
-
-
-
 }
 
 
