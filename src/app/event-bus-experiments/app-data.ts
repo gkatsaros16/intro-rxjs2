@@ -8,7 +8,7 @@ class DataStore {
     public lessonsList$: Observable<Lesson[]> = this.lessonsListSubject.asObservable();
 
     initializeLessonsList(newList: Lesson[]) {
-        this.lessonsListSubject.next(_.cloneDeep(newList))
+        this.lessonsListSubject.next(_.cloneDeep(newList) )
     }
 
     addLesson(newLesson: Lesson) {
