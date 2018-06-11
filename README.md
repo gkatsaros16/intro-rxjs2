@@ -1,3 +1,5 @@
+This is tutorial work from a udemy course on rxjs programming. 
+
 # Repository Content
 
 This repository contains of the Angular University [RxJs and Reactive Patterns Angular Architecture Course](https://angular-university.io/course/reactive-angular-architecture-course).
